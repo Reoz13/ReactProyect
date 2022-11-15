@@ -5,45 +5,110 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import MyNavBar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
+import Logo from "../../assets/logo.png";
 
 export default function NavBar() {
   return (
-    <div className="d-flex">
-      <MyNavBar bg="light" expand="lg">
-        <Container className="d-flex ">
-          <div className="d-flex justify-content-between">
-            <MyNavBar.Brand>Geonz</MyNavBar.Brand>
+    <MyNavBar bg="light" expand="lg">
+      <Container
+        fluid
+        className="d-flex justify-content-between align-items-center"
+      >
+        <MyNavBar.Brand href="#home">React-Bootstrap</MyNavBar.Brand>
+        <MyNavBar.Toggle aria-controls="basic-navbar-nav" />
+        <MyNavBar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </MyNavBar.Collapse>
+      </Container>
+    </MyNavBar>
+    // <MyNavBar
+    //   className="d-flex row justify-content-between align-items-center "
+    //   bg="light"
+    //   expand="lg"
+    // >
+    //   <Container>
+    //     <div className="">
+    //       {" "}
+    //       <MyNavBar.Brand>
+    //         <Link to="/">
+    //           <img src={Logo} alt="Logo de Goemz" className="LogoNav" />{" "}
+    //         </Link>
+    //       </MyNavBar.Brand>{" "}
+    //     </div>
 
-            <MyNavBar.Toggle aria-controls="basic-navbar-nav" />
-            <MyNavBar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                {/* Sillas */}
-                <NavDropdown title="Sillas" id="basic-nav-dropdown">
-                  <NavDropdown.Item>Sillas Jardín</NavDropdown.Item>
-                  <NavDropdown.Item>Sillas de Escritorio</NavDropdown.Item>
-                  <NavDropdown.Item>Sillas Infantiles</NavDropdown.Item>
-                  <NavDropdown.Item>Ver Todo</NavDropdown.Item>
-                </NavDropdown>
-                {/* Mesa  */}
-                <NavDropdown title="Mesas" id="basic-nav-dropdown">
-                  <NavDropdown.Item>Mesas Industriales</NavDropdown.Item>
-                  <NavDropdown.Item>Mesas Redondas</NavDropdown.Item>
-                  <NavDropdown.Item>Escritorios</NavDropdown.Item>
-                  <NavDropdown.Item>Ver Todo</NavDropdown.Item>
-                </NavDropdown>
-                {/* Decoracion  */}
-                <NavDropdown title="Decoracion" id="basic-nav-dropdown">
-                  <NavDropdown.Item>Lamparas</NavDropdown.Item>
-                  <NavDropdown.Item>Tocadores y espejos</NavDropdown.Item>
-                  <NavDropdown.Item>Plantas y maceteros</NavDropdown.Item>
-                  <NavDropdown.Item>Ver Todo</NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
-            </MyNavBar.Collapse>
-          </div>
-          <CartWidget />
-        </Container>
-      </MyNavBar>
-    </div>
+    //     <div>
+    //       <MyNavBar.Toggle aria-controls="basic-navbar-nav" />
+    //       <MyNavBar.Collapse id="basic-navbar-nav">
+    //         <Nav>
+    //           {/* Sillas */}
+    //           <NavDropdown title="Sillas" id="basic-nav-dropdown">
+    //             <NavDropdown.Item>
+    //               <Link to="/sillas/jardin">Sillas Jardín</Link>
+    //             </NavDropdown.Item>
+    //             <NavDropdown.Item>
+    //               <Link to="/sillas/escritorio">Sillas de Escritorio</Link>
+    //             </NavDropdown.Item>
+    //             <NavDropdown.Item>
+    //               <Link to="/sillas/infantiles">Sillas Infantiles</Link>
+    //             </NavDropdown.Item>
+    //             <NavDropdown.Item>
+    //               <Link to="/sillas">Ver Todo</Link>
+    //             </NavDropdown.Item>
+    //           </NavDropdown>
+    //           {/* Mesa  */}
+    //           <NavDropdown title="Mesas" id="basic-nav-dropdown">
+    //             <NavDropdown.Item>
+    //               <Link to="/mesas/industriales">Mesas Industriales</Link>
+    //             </NavDropdown.Item>
+    //             <NavDropdown.Item>
+    //               <Link to="/mesas/redondas">Mesas Redondas</Link>
+    //             </NavDropdown.Item>
+    //             <NavDropdown.Item>
+    //               <Link to="/mesas/escritorios">Escritorios</Link>
+    //             </NavDropdown.Item>
+    //             <NavDropdown.Item>
+    //               <Link to="/mesas">Ver Todo</Link>
+    //             </NavDropdown.Item>
+    //           </NavDropdown>
+    //           {/* Decoracion  */}
+    //           <NavDropdown title="Decoracion" id="basic-nav-dropdown">
+    //             <NavDropdown.Item>
+    //               <Link to="/decoraciones/lamparas">Lamparas</Link>
+    //             </NavDropdown.Item>
+    //             <NavDropdown.Item>
+    //               <Link to="/decoraciones/tocadores-espejos">
+    //                 Tocadores y espejos
+    //               </Link>
+    //             </NavDropdown.Item>
+    //             <NavDropdown.Item>
+    //               <Link to="/decoraciones/plantas-maceteros">
+    //                 Plantas y maceteros
+    //               </Link>
+    //             </NavDropdown.Item>
+    //             <NavDropdown.Item>
+    //               <Link to="/decoraciones">Ver Todo</Link>
+    //             </NavDropdown.Item>
+    //           </NavDropdown>
+    //         </Nav>
+    //       </MyNavBar.Collapse>
+    //     </div>
+    //     <CartWidget />
+    //   </Container>
+    // </MyNavBar>
   );
 }
