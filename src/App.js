@@ -16,61 +16,71 @@ function App() {
             <Route index element={<Home />} />
             {/* Routeo Sillas  */}
             <Route path="sillas">
-              <Route index element={<ItemListContainer />} />
+              <Route index element={<ItemListContainer type="sillas" />} />
               <Route
                 exact
                 path="jardin"
-                element={<ItemListContainer type="jardin" />}
+                element={<ItemListContainer type="sillas" subType="jardin" />}
               />
               <Route
                 exact
                 path="escritorio"
-                element={<ItemListContainer type="escritorio" />}
+                element={
+                  <ItemListContainer type="sillas" subType="escritorio" />
+                }
               />
               <Route
                 exact
                 path="infantiles"
-                element={<ItemListContainer type="infantiles" />}
+                element={
+                  <ItemListContainer type="sillas" subType="infantiles" />
+                }
               />
               <Route path=":id" element={<ItemDetailContainer />} />
             </Route>
             {/* Routeo Mesas  */}
             <Route path="mesas">
-              <Route index element={<ItemListContainer />} />
+              <Route index element={<ItemListContainer type="mesas" />} />
               <Route
                 exact
                 path="industriales"
-                element={<ItemListContainer type="industriales" />}
+                element={
+                  <ItemListContainer type="mesas" subType="industriales" />
+                }
               />
               <Route
                 exact
                 path="redondas"
-                element={<ItemListContainer type="redondas" />}
+                element={<ItemListContainer type="mesas" subType="redondas" />}
               />
               <Route
                 exact
                 path="escritorios"
-                element={<ItemListContainer type="escritorio" />}
+                element={
+                  <ItemListContainer type="mesas" subType="escritorios" />
+                }
               />
               <Route path=":id" element={<ItemDetailContainer />} />
             </Route>
             {/* Routeo Decoracion  */}
-            <Route path="decoraciones">
-              <Route index element={<ItemListContainer />} />
+            <Route path="mobiliario">
+              <Route index element={<ItemListContainer type="mobiliario" />} />
               <Route
                 exact
-                path="lamparas"
-                element={<ItemListContainer type="lamparas" />}
+                path="sofas-sillones"
+                element={
+                  <ItemListContainer
+                    type="mobiliario"
+                    subType="sofas-sillones"
+                  />
+                }
               />
               <Route
                 exact
-                path="tocadores-espejos"
-                element={<ItemListContainer type="tocadores-espejos" />}
-              />
-              <Route
-                exact
-                path="plantas-maceteros"
-                element={<ItemListContainer type="plantas-maceteros" />}
+                path="auxiliar"
+                element={
+                  <ItemListContainer type="mobiliario" subType="auxiliar" />
+                }
               />
               <Route path=":id" element={<ItemDetailContainer />} />
             </Route>
