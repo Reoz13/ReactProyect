@@ -13,7 +13,7 @@ export const productos = [
     montaje: "no",
     garantia: "2 años",
     precio: 45,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/337/668/468",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ export const productos = [
     montaje: "no",
     garantia: "2 años",
     precio: 59,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/437/668/468",
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 39,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/537/668/468",
   },
   {
     id: 4,
@@ -61,7 +61,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 49,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/637/668/468",
   },
   {
     id: 5,
@@ -78,7 +78,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 69,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/737/668/468",
   },
   {
     id: 6,
@@ -95,7 +95,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 89,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/837/668/468",
   },
   {
     id: 7,
@@ -112,7 +112,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 24,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/937/668/468",
   },
   {
     id: 8,
@@ -129,7 +129,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 40,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/247/668/468",
   },
   {
     id: 9,
@@ -146,7 +146,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 22,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/257/668/468",
   },
   {
     id: 10,
@@ -163,7 +163,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 99,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/267/668/468",
   },
   {
     id: 11,
@@ -180,7 +180,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 99,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/277/668/468",
   },
   {
     id: 12,
@@ -197,7 +197,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 179,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/287/668/468",
   },
   {
     id: 13,
@@ -214,7 +214,7 @@ export const productos = [
     montaje: "no",
     garantia: "2 años",
     precio: 22,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/297/668/468",
   },
   {
     id: 14,
@@ -231,7 +231,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 179,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/407/668/468",
   },
   {
     id: 15,
@@ -248,7 +248,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 95,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/231/668/468",
   },
   {
     id: 16,
@@ -265,7 +265,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 69,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/232/668/468",
   },
   {
     id: 17,
@@ -282,7 +282,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 99,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/233/668/468",
   },
   {
     id: 18,
@@ -299,7 +299,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 89,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/234/668/468",
   },
   {
     id: 19,
@@ -316,7 +316,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 75,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/235/668/468",
   },
   {
     id: 20,
@@ -333,7 +333,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 64,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/236/668/468",
   },
   {
     id: 21,
@@ -367,7 +367,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 189,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/117/668/468",
   },
   {
     id: 23,
@@ -384,7 +384,7 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 787,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/127/668/468",
   },
   {
     id: 24,
@@ -401,6 +401,6 @@ export const productos = [
     montaje: "si",
     garantia: "2 años",
     precio: 480,
-    url: "https://picsum.photos/id/237/668/468",
+    url: "https://picsum.photos/id/137/668/468",
   },
 ];
