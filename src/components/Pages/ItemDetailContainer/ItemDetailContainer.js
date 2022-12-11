@@ -5,31 +5,31 @@ import Row from "react-bootstrap/esm/Row";
 import { useParams } from "react-router-dom";
 import { productos } from "../../../assets/productos";
 import { TbTruckDelivery } from "react-icons/tb";
+import Button from "react-bootstrap/esm/Button";
+import { useCart } from "../../../context/CartContext";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
+import ItemDetail from "../../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
   const [prod, setProd] = useState(null);
   const { id } = useParams();
+
+  const getItem = async () => {
+    const db = getFirestore();
+    const docRef = doc(db, "products", id);
+    const docSnap = await getDoc(docRef);
+    setProd({ id: docSnap.id, ...docSnap.data() });
+  };
   useEffect(() => {
-    setProd(productos.find((k) => k.id == id));
-    console.log(typeof id);
+    getItem();
   }, []);
 
-  if (!prod) return <p>cargando...</p>;
+  // if (!prod) return <p>cargando...</p>;
   return (
-    <Container className="mt-5">
-      <Row>
-        <Col md={7}>
-          <img src={prod.url}></img>
-        </Col>
-        <Col md={5}>
-          <h1>{prod.nombre}</h1>
-          <p>€{prod.precio}</p>
-          <p>
-            <TbTruckDelivery /> Llega mañana por €2
-          </p>
-        </Col>
-      </Row>
-    </Container>
+    <>
+      {" "}
+      <ItemDetail prod={prod}></ItemDetail>
+    </>
   );
 };
 

@@ -1,3 +1,12 @@
 .LogoNav {
     width: 30%;
 }
+
+.navar-bg {
+    background-color: #675547 !important;
+}
+
+.nav-item {
+    color: forestgreen !important;
+    font-size: 20px;
+}

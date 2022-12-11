@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'PT Serif', serif;
 
+}
+
+h1 {
+  color: #675547;
 }
 
 a {
@@ -12,4 +17,14 @@ a {
 
 ul {
   list-style: none;
+}
+
+.button-geonz {
+  background-color: #2d2926;
+  border-color: #2d2926;
+}
+
+.button-geonz:hover {
+  background-color: #817f7d;
+  border-color: #2d2926;
 }
